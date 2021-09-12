@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+
+    <title>Health Diagnosis ML</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static',filename = 'style.css')}}"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="navbar navbar-expand-md navbar-dark bg-steel fixed-top">
+        <div class="container">
+          <a class="navbar-brand mr-4" href="/"
+            >Progression Analysis and Facial Emotion Recognition of Dementia
+            Patients</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarToggle"
+            aria-controls="navbarToggle"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarToggle">
+            <div class="navbar-nav mr-auto">
+              <a class="nav-item nav-link" href="/">Home</a>
+              <a class="nav-item nav-link" href="/dementia"
+                >Dementia Prediction</a
+              >
+              <a class="nav-item nav-link" href="/image">Upload Image</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="frontpageclass">
+      <h2>About Dementia</h2>
+      <p>
+        Dementia is not a specific disease. It’s an overall term that describes
+        a group of symptoms associated with a decline in memory or other
+        thinking skills severe enough to reduce a person’s ability to perform
+        everyday activities. Alzheimer’s disease accounts for 60 to 80 percent
+        of cases. Vascular dementia, which occurs after a stroke, is the second
+        most common dementia type. But there are many other conditions that can
+        cause symptoms of dementia, including some that are reversible, such as
+        thyroid problems and vitamin deficiencies.
+      </p>
+      <p>
+        Dementia is a general term for loss of memory and other mental abilities
+        severe enough to interfere with daily life. It is caused by physical
+        changes in the brain. Alzheimer's is the most common type of dementia,
+        but there are many kinds.
+      </p>
+      <h2>Alzheimer</h2>
+      <p>
+        Alzheimer's is a type of dementia that causes problems with memory,
+        thinking and behavior. Symptoms usually develop slowly and get worse
+        over time, becoming severe enough to interfere with daily tasks.
+      </p>
+      <p>
+        Alzheimer's is not a normal part of aging. The greatest known risk
+        factor is increasing age, and the majority of people with Alzheimer's
+        are 65 and older. But Alzheimer's is not just a disease of old age.
+        Approximately 200,000 Americans under the age of 65 have younger-onset
+        Alzheimer’s disease (also known as early-onset Alzheimer’s).
+      </p>
+      <p>
+        Alzheimer's is the sixth leading cause of death in the United States.
+        Those with Alzheimer's live an average of eight years after their
+        symptoms become noticeable to others, but survival can range from four
+        to 20 years, depending on age and other health conditions.
+      </p>
+      <p>
+        Alzheimer's has no current cure, but treatments for symptoms are
+        available and research continues. Although current Alzheimer's
+        treatments cannot stop Alzheimer's from progressing, they can
+        temporarily slow the worsening of dementia symptoms and improve quality
+        of life for those with Alzheimer's and their caregivers. Today, there is
+        a worldwide effort under way to find better ways to treat the disease,
+        delay its onset, and prevent it from developing.
+      </p>
+      <h3>Stages of Dementia Diagnosis:</h3>
+      <ol type="i">
+        <li>
+          Evaluating Medical History
+          <ul>
+            <li>
+              We can add an automated cognitive test which analyses the facial
+              emotion of subject based on some intuitive questions, and closely
+              examine the facial expressions of subject, and whether there is
+              any facial expression deficits present.
+            </li>
+            <li>
+              For example, if the subject is being probed about a particular
+              question, how is the subject reacting with respect to his facial
+              expressions. What facial emotions is the subject conveying?
+            </li>
+          </ul>
+        </li>
+        <li>Physical Examination</li>
+        <li>Neurological Tests</li>
+      </ol>
+      <h3>Clinical info used for the Dementia Progression Analysis:</h3>
+      <ul>
+        <li>
+          MMSE - Mini-Mental State Examination score (range is from 0 = worst to
+          30 = best)
+        </li>
+        <li>
+          CDR - Clinical Dementia Rating (0 = no dementia, 0.5 = very mild AD, 1
+          = mild AD, 2 = moderate AD)
+        </li>
+        <li>Derived anatomic volumes</li>
+        <li>eTIV - Estimated total intracranial volume, mm3</li>
+        <li>
+          nWBV - Normalized whole-brain volume, expressed as a percent of all
+          voxels in the atlas-masked image that are labeled as gray or white
+          matter by the automated tissue segmentation process
+        </li>
+        <li>
+          ASF - Atlas scaling factor (unitless). Computed scaling factor that
+          transforms native-space brain and skull to the atlas target (i.e., the
+          determinant of the transform matrix)
+        </li>
+      </ul>
+      <h2>
+        Facial Emotion Recognition of Dementia Patients using Machine Learning:
+      </h2>
+      <p>
+        Underdiagnosis is one of a number of deficiencies in both diagnosis and
+        management of dementia in the primary care setting. Cognitive deficits
+        can be detected several years before the clinical diagnosis of dementia.
+        The neuropsychological profile may indicate the underlying
+        neuropathology.
+      </p>
+      <h3>Early Diagnosis of dementia can be classified as:</h3>
+      <ul>
+        <li>
+          First determine the memory disorder, not specifically related to
+          memory complaint.
+        </li>
+        <li>
+          Classifying the memory disorder and examine other cognitive/non
+          cognitive functions.
+        </li>
+      </ul>
+      <h3>In which symptoms is dementia mainly isolated?</h3>
+      <p>
+        We mainly use comprehensive assessment to analyse the symptoms, but the
+        sensitivity of these assessment tools varies depending on age,
+        education, social class, living situation.
+      </p>
+      <p>
+        For early diagnosis, we can conduct something like “Active Recall” for
+        the patients. i,e: Free and Cued Selective Reminding Test (FCSRT)
+      </p>
+      <h3>How can we relate facial emotion to dementia?</h3>
+      <p>
+        The first symptom typically of dementia is impairment of recent memory:
+        poor learning and retention of information over time.
+      </p>
+      <p>
+        We can stress of important factors such as – delayed response, visual
+        discomfort
+      </p>
+      <p>
+        Dementia symptoms include memory loss, confusion, and personality and
+        behavioural changes.
+      </p>
+    </div>
+    <section class="footer1">
+      <p>Copy right @ Afrin Siddiqui</p>
+      <div class="icons">
+        <a href="">Github</a>
+        <a href="">Facebook</a>
+        <a href="">Linked In</a>
+      </div>
+    </section>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

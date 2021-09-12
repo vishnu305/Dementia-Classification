@@ -1,0 +1,124 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  margin: 0;
+  background-color: #fdfdfd;
+}
+
+/* --------footer------- */
+.footer {
+  width: 100%;
+  text-align: center;
+  padding: 1px 0;
+  background-color: #66bfbf;
+  background-color: #8fbc8f;
+  background-color: #5f788a;
+  color: #fff;
+  position: absolute;
+  top: 87vh;
+}
+.footer h4 {
+  margin-bottom: 25px;
+  margin-top: 20px;
+  font-weight: 600;
+}
+.footer1 {
+  width: 100%;
+  text-align: center;
+  padding: 1px 0;
+  background-color: #66bfbf;
+  background-color: #8fbc8f;
+  background-color: #5f788a;
+  color: #fff;
+  margin-top: 8.5%;
+}
+.footer1 h4 {
+  margin-bottom: 25px;
+  margin-top: 20px;
+  font-weight: 600;
+}
+.icons {
+  margin-top: 20px;
+}
+.icons a {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.icons a {
+  color: white;
+  display: inline-block;
+  margin: 10px 20px;
+  text-decoration: none;
+}
+.icons a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: white;
+  transition: width 0.3s;
+}
+
+.icons a:hover::after {
+  width: 100%;
+  transition: width 0.3s;
+}
+.icons a:hover {
+  color: white;
+  text-decoration: none;
+}
+.mmm {
+  position: relative;
+  z-index: 3;
+}
+
+.formclass {
+  margin-left: 10%;
+  margin-top: 110px;
+}
+.formclass input {
+  margin-bottom: 10px;
+}
+.resultclass {
+  margin-left: 10%;
+  margin-top: 110px;
+}
+.frontpageclass {
+  margin-left: 10%;
+  margin-top: 100px;
+  margin-right: 5%;
+}
+.heartimage {
+  height: 30%;
+  width: 50%;
+  margin-left: 100px;
+}
+
+.site-header .navbar-nav .nav-link {
+  color: #cbd5db;
+}
+
+.site-header .navbar-nav .nav-link:hover {
+  color: #ffffff;
+}
+
+.site-header .navbar-nav .nav-link.active {
+  font-weight: 500;
+}
+.bg-steel {
+  background-color: #5f788a;
+}
+.uploadimage {
+  position: relative;
+  overflow: hidden;
+}
+.uploadimage input[type="file"] {
+  border-radius: 10px;
+  color: white;
+  background-color: #574b90;
+  filter: alpha(opacity=0);
+  opacity: 0;
+  outline: none;
+}
